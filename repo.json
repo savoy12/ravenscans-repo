@@ -3,6 +3,8 @@
   "id": "com.ravenscans.repo",
   "version": 1,
   "sources": [
+    "https://raw.githubusercontent.com/savoy12/ravenscans-repo/main/sources/ravenscans/source.json"
+  ]
     {
       "id": "com.ravenscans.en",
       "name": "Raven Scans",
