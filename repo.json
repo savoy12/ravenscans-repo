@@ -1,0 +1,16 @@
+{
+  "name": "RavenScans Repository",
+  "id": "com.ravenscans.repo",
+  "version": 1,
+  "sources": [
+    {
+      "id": "com.ravenscans.en",
+      "name": "Raven Scans",
+      "lang": "en",
+      "url": "https://ravenscans.com",
+      "version": 1,
+      "nsfw": false
+    }
+  ]
+}
+
