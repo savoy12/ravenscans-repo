@@ -1,0 +1,93 @@
+{
+  "id": "com.ravenscans.en",
+  "name": "Raven Scans",
+  "lang": "en",
+  "url": "https://ravenscans.com",
+  "version": 1,
+  "nsfw": false,
+  "type": "json",
+
+  "infoScript": {
+    "script": [
+      {
+        "title": "h1.entry-title",
+        "altTitles": [],
+        "authors": ".fmed:contains('Author') a",
+        "artists": ".fmed:contains('Artist') a",
+        "status": ".imptdt:contains('Status') i",
+        "genres": ".mgen a",
+        "description": ".entry-content p",
+        "thumbnail": ".thumb img@src"
+      }
+    ]
+  },
+
+  "chaptersScript": {
+    "script": [
+      {
+        "container": ".clstyle li",
+        "title": "a span.chapter-name",
+        "url": "a@href",
+        "date": "span.chapter-release-date"
+      }
+    ]
+  },
+
+  "pagesScript": {
+    "script": [
+      {
+        "container": "div.reader-area img",
+        "imageUrl": "@src"
+      }
+    ]
+  },
+
+  "searchScript": {
+    "script": [
+      {
+        "url": "/?s={query}",
+        "results": ".post",
+        "title": ".tt",
+        "urlSelector": "a@href",
+        "thumbnail": "img@src",
+        "subtitle": ".mg",
+        "nextPage": ".nextpostslink@href"
+      }
+    ]
+  },
+
+  "popularScript": {
+    "script": [
+      {
+        "url": "/series/?order=popular",
+        "results": ".post",
+        "title": ".tt",
+        "urlSelector": "a@href",
+        "thumbnail": "img@src",
+        "subtitle": ".mg",
+        "nextPage": ".nextpostslink@href"
+      }
+    ]
+  },
+
+  "latestScript": {
+    "script": [
+      {
+        "url": "/series/?order=latest",
+        "results": ".post",
+        "title": ".tt",
+        "urlSelector": "a@href",
+        "thumbnail": "img@src",
+        "subtitle": ".mg",
+        "nextPage": ".nextpostslink@href"
+      }
+    ]
+  },
+
+  "headers": {
+    "Referer": "https://ravenscans.com/",
+    "User-Agent": "Mozilla/5.0 (compatible; Aidoku/1.0)"
+  },
+
+  "notes": "Combined Aidoku source for Raven Scans. Supports search, latest, and popular listings, chapter scraping, and page list extraction."
+}
